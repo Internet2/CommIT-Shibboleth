@@ -117,7 +117,7 @@
 													<div class="span6">
 														<ul class="unstyled text-left">
 															<li><a href="https://account.commonidtrust.org/IdentityProvisioning/forgot_userid_index.jsp" class="btn btn-link cm-btn-link forgot">Forgot UserId?</a></li>
-															<li><a href="https://account.commonidtrust.org/IdentityProvisioning/forgot_password_index.jsp" class="btn btn-link cm-btn-link forgot">Forgot Password?</a></li>
+															<li><a href="https://account.commonidtrust.org/IdentityProvisioning/forgot_password_index.jsp" class="btn btn-link cm-btn-link forgot">Forgot/Reset Password?</a></li>
 														</ul>
 													</div>
 													<div class="span6">
