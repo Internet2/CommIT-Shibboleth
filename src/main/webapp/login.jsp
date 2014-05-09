@@ -168,6 +168,9 @@
 				<h3>Important!</h3>
 			</div>
 			<div class="modal-body">
+				<div class="alert alert-error">
+					<small>Please do not use your browser <strong>BACK</strong> button during the registration process.</small>
+				</div>
 				<p>
 					The <strong>Common Identity and Trust collaborative (CommIT)</strong> was formed to make it easier 
 					and more secure for you to apply to college. By completing this registration process 
