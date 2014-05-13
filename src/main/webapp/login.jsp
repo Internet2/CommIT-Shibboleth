@@ -172,11 +172,10 @@
 					<small>Please do not use your browser <strong>BACK</strong> button during the registration process.</small>
 				</div>
 				<p>
-					The <strong>Common Identity and Trust collaborative (CommIT)</strong> was formed to make it easier 
-					and more secure for you to apply to college. By completing this registration process 
-					and creating an account with us, you'll be able to use your new userid and password 
-					to log into many admission-related sites offered by schools and companies, reducing 
-					your time (and headache) to apply.
+					The <strong>Common Identity and Trust Collaborative (CommIT)</strong> makes it easier 
+					and more secure for you to apply to college. After completing this registration process 
+					you can use this one user ID and password to access many admissions-related sites at 
+					participating schools and companies.
 				</p>
 			</div>
 			<div class="modal-footer">
