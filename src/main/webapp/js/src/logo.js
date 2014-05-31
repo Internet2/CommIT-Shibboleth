@@ -1,5 +1,3 @@
-/*global jQuery:true, window:true, _:true */
-
 // Namespace.
 var commit = commit || {};
 
