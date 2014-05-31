@@ -26,6 +26,15 @@ module.exports = function (grunt) {
 			}
 		},
 
+		clean: {
+			prod: [
+				'js/src/login-min.js',
+				'js/src/logo-parser-min.js',
+				'js/src/logo-min.js',
+				'js/src/register-min.js'
+			]
+		},
+
 		// Copy project assets.
 		copy: {
 			dev: {
@@ -90,16 +99,20 @@ module.exports = function (grunt) {
 				trailing: true,
 				strict: true,
 				latedef: true,
-				indent: true,
-				quotmark: true
-			},
-			global: {
-				define: true,
-				window: true,
-				document: true,
-				exports: true,
-				module: true,
-				require: true
+				indent: 4,
+				quotmark: true,
+				globals: {
+					window: true,
+					document: true,
+					require: true,
+					__dirname: true,
+					process: true,
+					module: true,
+					console: true,
+					_: true,
+					$: true,
+					jQuery: true
+				}
 			},
 			all: [
 				'js/src/*.js',
@@ -125,7 +138,12 @@ module.exports = function (grunt) {
 	});
 
 	// Load plugins/tasks.
-	grunt.loadNpmTasks('grunt-contrib');
+	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Watch command. Watches less and jsp files for changes.
 	grunt.registerTask('watcher', ['watch:dev']);
@@ -137,5 +155,5 @@ module.exports = function (grunt) {
 	grunt.registerTask('copier', ['copy:dev']);
 
 	// Production command.
-	grunt.registerTask('prod', ['jshint', 'uglify:lib', 'uglify:source', 'less:prod']);
+	grunt.registerTask('prod', ['clean:prod', 'jshint', 'uglify:lib', 'uglify:source', 'less:prod']);
 };
