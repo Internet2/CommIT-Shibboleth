@@ -122,7 +122,7 @@
 				<p>
 					The <strong>Common Identity and Trust Collaborative (CommIT)</strong> makes it easier 
 					and more secure for you to apply to college. After completing this registration process 
-					you can use this one user ID and password to access many admissions-related sites at 
+					you can use this one username and password to access many admissions-related sites at 
 					participating schools and companies.
 				</p>
 			</div>
